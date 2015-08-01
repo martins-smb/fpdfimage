@@ -1,10 +1,10 @@
 <?php
 	require('VariableStream.php');
-	require('../../itbz/fpdf/src/fpdf/FPDF.php');
+	use \fpdf\FPDF;
 	
 	class FPDFImage extends FPDF {
 		public function __construct($orientation='P', $unit='mm', $format='A4') {
-			$this->FPDF($orientation, $unit, $format);
+			parent::__construct($orientation, $unit, $format);
 			stream_wrapper_register('var', 'VariableStream');
 		}
 	
