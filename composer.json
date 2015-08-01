@@ -1,0 +1,14 @@
+{
+    "name": "martins-smb/fpdfimage",
+    "description": "FPDF Image",
+    "keywords": [ "fpdfimage", "image" ],
+    "homepage": "https://github.com/martins-smb/fpdfimage",
+    "license": "no usage restriction",
+    "require": {
+        "php": ">5.3.0",
+	"itbz/fpdf": "1.7.2"
+    },
+    "autoload": {
+        "classmap": ["fpdfimage/"]
+    }
+}
