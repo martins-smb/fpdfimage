@@ -11,8 +11,8 @@ I have made some changes to make mem_image.php compatible for itbz/fpdf.
 
 $pdf = new FPDFImage("L","mm","A4");
 $pdf->AddPage();
-$pdf->SetFont('arial','',8);
-$pdf->Cell(276,5,'Text Example',1,0,'L');
+$pdf->SetFont('arial','B',10);
+$pdf->Cell(288,5,'Example',0,1,'C');
 $pdf->Output("file.pdf","I");
 
 ```
@@ -22,8 +22,8 @@ $pdf->Output("file.pdf","I");
 
 $pdf = new FPDFImage("L","mm","A4");
 $pdf->AddPage();
-$pdf->SetFont('arial','',8);
-$pdf->Cell(276,5,'Example Text',1,0,'L');
+$pdf->SetFont('arial','B',10);
+$pdf->Cell(288,5,'Example',0,1,'C');
 
 $plot = new PHPlot(400, 300);
 $plot->SetImageBorderType('plain');
@@ -41,9 +41,9 @@ $plot->SetDataValues($data);
 		
 $plot->SetDataColors(array('DarkGreen', 'orange', 'yellow', 'blue', 'cyan', 'magenta', 'brown', 'lavender', 'pink', 'gray', 'red', 'green'));
 		
-$plot->SetTitle('Example Text');
+$plot->SetTitle('Example');
 
-$data2 = array("Example Text 1", "Example Text 2");
+$data2 = array("Example 1", "Example 2");
 $plot->SetLegend($data2);
 		
 $plot->SetXTickLabelPos('none');
